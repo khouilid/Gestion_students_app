@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Module">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="75.0" layoutY="110.0" text="Specialite" />
+            <Label layoutX="75.0" layoutY="192.0" prefHeight="17.0" prefWidth="51.0" text="Moduls" />
+            <ComboBox layoutX="188.0" layoutY="106.0" prefHeight="25.0" prefWidth="317.0" />
+            <TextField layoutX="188.0" layoutY="188.0" prefHeight="25.0" prefWidth="317.0" />
+            <Button layoutX="347.0" layoutY="315.0" mnemonicParsing="false" text="Modifier" />
+
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
