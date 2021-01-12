@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Test">
+   <left>
+      <AnchorPane prefHeight="360.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+
+            <TextField layoutX="52.0" layoutY="155.0" text="Students" />
+            <TextField layoutX="52.0" layoutY="245.0" text="Specialiste" />
+            <TextField layoutX="52.0" layoutY="337.0" text="Module" />
+            <Separator layoutX="233.0" layoutY="61.0" orientation="VERTICAL" prefHeight="564.0" prefWidth="13.0" />
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="633.0" prefWidth="722.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="62.0" layoutY="71.0" prefHeight="44.0" prefWidth="728.0" />
+            <Label layoutX="98.0" layoutY="85.0" text="ID" />
+            <Label layoutX="191.0" layoutY="85.0" prefHeight="17.0" prefWidth="40.0" text="Nom" />
+            <Label layoutX="301.0" layoutY="85.0" prefHeight="17.0" prefWidth="57.0" text="Prenom" />
+            <Label layoutX="419.0" layoutY="85.0" prefHeight="17.0" prefWidth="43.0" />
+            <Label layoutX="448.0" layoutY="85.0" text="Email" />
+            <Label layoutX="578.0" layoutY="85.0" text="Phone" />
+            <Label layoutX="687.0" layoutY="85.0" text="Specialite" />
+            <Label layoutX="90.0" layoutY="150.0" text="1" />
+            <Label layoutX="172.0" layoutY="142.0" prefHeight="17.0" prefWidth="66.0" text="Mohamed" />
+            <Label layoutX="301.0" layoutY="142.0" />
+            <Label layoutX="316.0" layoutY="142.0" text="Label" />
+            <Label layoutX="449.0" layoutY="142.0" text="Label" />
+            <Label layoutX="581.0" layoutY="142.0" text="Label" />
+            <Label layoutX="699.0" layoutY="142.0" text="Label" />
+            <Button layoutX="560.0" layoutY="523.0" mnemonicParsing="false" text="Ajouter" onAction="#addetudiant"/>
+            <Button layoutX="687.0" layoutY="523.0" mnemonicParsing="false" text="Supprimer" onAction="#deleteetudiant"/>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
