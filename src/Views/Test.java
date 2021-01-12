@@ -1,29 +1,38 @@
 package Views;
 
-
-import DAO.modulesDAO;
-import DAOImpl.ModuleDAOImpl;
-import Modules.Module;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.sql.SQLException;
 
-public class Test {
-    public static void main(String[] args) throws SQLException {
+import javafx.application.Application;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Test extends Application  {
 
 
-    // SpecialityDAO speciality = new SpecialityDAOImpl();
-    // Speciality specialit = new Speciality();
+	@Override
+	public void start(Stage primaryStage){
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("Module.fxml"));
 
-        modulesDAO mode = new ModuleDAOImpl();
-        Module module = new Module();
-//        module.setModule_id(7);
-//        module.setModule_name("200");
+			primaryStage.setTitle("hi!!");
+			primaryStage.setScene(new Scene(root, 800, 600));
+			primaryStage.show();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 
-//        module.setModule_name("");
-//        module.setSpeciality_id(2);
-//        System.out.println(mode.update(module));
+	}
 
-//        specialit.setSpeciality_id(2);
-//        specialit.setSpeciality("full");
-//        System.out.println(speciality.delete(7));
-    }
 }
