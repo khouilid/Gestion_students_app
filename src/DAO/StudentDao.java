@@ -8,6 +8,7 @@ public interface StudentDao {
 
         ResultSet get_By_id(int id) throws SQLException;
 
+
         ResultSet getAll() throws SQLException;
 
         String set(Student Student) throws SQLException;
