@@ -22,7 +22,7 @@ public class Test extends Application  {
 	@Override
 	public void start(Stage primaryStage){
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Module.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
 
 			primaryStage.setTitle("hi!!");
 			primaryStage.setScene(new Scene(root, 800, 600));
