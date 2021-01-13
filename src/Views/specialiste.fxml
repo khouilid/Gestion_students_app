@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+
 
 <AnchorPane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Specialit">
    <children>
       <Label layoutX="48.0" layoutY="34.0" prefHeight="17.0" prefWidth="95.0" text="Specialite" />
       <TextField id="specality_input" fx:id="speciality" layoutX="48.0" layoutY="77.0" prefHeight="25.0" prefWidth="318.0" style="-fx-padding: 10px;" />
       <Button layoutX="236.0" layoutY="126.0" mnemonicParsing="false" onMouseClicked="#add__speciality" prefHeight="26.0" prefWidth="130.0" text="OK" />
-   </children>
 </AnchorPane>

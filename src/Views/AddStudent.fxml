@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="-4.0" layoutY="1.0" prefHeight="506.0" prefWidth="262.0" spacing="24.0" style="-fx-background-color: #f5f5dc;">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="261.0" text="                  Id" />
+            <Label prefHeight="45.0" prefWidth="262.0" text="                  Name" />
+            <Label prefHeight="49.0" prefWidth="262.0" text="                  Prenom" />
+            <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="262.0" text="                   Email" />
+            <Label prefHeight="42.0" prefWidth="262.0" text="                  Telephone" />
+            <Label prefHeight="42.0" prefWidth="262.0" text="                  Specialité" />
+         </children>
+      </VBox>
+      <VBox layoutX="258.0" layoutY="-1.0" prefHeight="449.0" prefWidth="341.0" spacing="31.0">
+         <children>
+            <TextField />
+            <TextField />
+            <TextField />
+            <TextField />
+            <TextField />
+            <TextField />
+         </children>
+      </VBox>
+      <Button layoutX="433.0" layoutY="448.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: #3A84C3;" text="Ajouter" textFill="#fcf9f9" />
+   </children>
+</AnchorPane>
