@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1293.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1293.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Specialit">
    <children>
-      <Pane prefHeight="155.0" prefWidth="1275.0" style="-fx-background-color: #2D75E8;">
+      <Pane prefHeight="155.0" prefWidth="1275.0" style="-fx-background-color: #2d75e8;">
          <children>
             <Label layoutX="346.0" layoutY="25.0" prefHeight="67.0" prefWidth="440.0" text="Dashboard" textFill="#f8f5f5">
                <font>
@@ -63,7 +61,7 @@
          <children>
             <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Student" textFill="#fffdfd" />
             <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Module" textFill="#fffdfd" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Specialité" textFill="#fffdfd" GridPane.columnIndex="2" />
+            <Button fx:id="addSpecial" mnemonicParsing="false" onMouseClicked="#getspeWindow" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Specialité" textFill="#fffdfd" GridPane.columnIndex="2" />
          </children>
       </GridPane>
       <TableView layoutX="1.0" layoutY="715.0" prefHeight="431.0" prefWidth="1275.0">
