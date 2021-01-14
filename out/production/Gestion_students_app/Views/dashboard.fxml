@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1293.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Specialit">
+<AnchorPane maxHeight="-Infinity"  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1293.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.Specialit">
    <children>
       <Pane prefHeight="155.0" prefWidth="1275.0" style="-fx-background-color: #2d75e8;">
          <children>
@@ -18,6 +18,7 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
+            <Button layoutX="1041.0" onAction="#reaload" layoutY="69.0" mnemonicParsing="false" text="Reaload" />
          </children>
       </Pane>
       <VBox layoutX="1077.0" layoutY="273.0" prefHeight="410.0" prefWidth="203.0" />
@@ -33,15 +34,15 @@
           <RowConstraints maxHeight="15.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
               <columns>
-                <TableColumn prefWidth="75.0" text="Id" />
-                <TableColumn prefWidth="557.0" text="Specialité" />
+                <TableColumn fx:id="s_id" prefWidth="75.0" text="ID" />
+                    <TableColumn fx:id="s_name" prefWidth="557.0" text="Specialité" />
               </columns>
             </TableView>
             <TableView prefHeight="346.0" prefWidth="647.0" GridPane.rowIndex="1">
               <columns>
-                <TableColumn prefWidth="75.0" text="Id" />
+                <TableColumn prefWidth="75.0" text="ID" />
                 <TableColumn prefWidth="286.0" text="Module" />
                   <TableColumn prefWidth="280.0" text="Specialité" />
               </columns>
@@ -60,7 +61,7 @@
         </rowConstraints>
          <children>
             <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Student" textFill="#fffdfd" />
-            <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Module" textFill="#fffdfd" GridPane.columnIndex="1" />
+            <Button fx:id="addModules" mnemonicParsing="false" onMouseClicked="#getModeWindow" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Module" textFill="#fffdfd" GridPane.columnIndex="1" />
             <Button fx:id="addSpecial" mnemonicParsing="false" onMouseClicked="#getspeWindow" prefHeight="56.0" prefWidth="264.0" style="-fx-background-color: #3A84C3;" text="Add Specialité" textFill="#fffdfd" GridPane.columnIndex="2" />
          </children>
       </GridPane>
