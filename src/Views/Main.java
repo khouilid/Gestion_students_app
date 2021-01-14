@@ -32,19 +32,4 @@ public class Main extends Application  {
 
 
 	}
-
-//	public void getspeWindow(MouseEvent mouseEvent) {
-//		Stage stage = new Stage();
-//		try {
-//			Parent root = FXMLLoader.load(getClass().getResource("specialiste.fxml"));
-//
-//			stage.setTitle("Gestion des élèves");
-//			stage.setScene(new Scene(root));
-//			stage.show();
-//		}
-//		catch (Exception e)
-//		{
-//			e.printStackTrace();
-//		}
-//	}
 }

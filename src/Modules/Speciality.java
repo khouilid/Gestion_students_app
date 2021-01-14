@@ -7,6 +7,11 @@ public class Speciality {
     public Speciality() {
     }
 
+    public Speciality(int speciality_id, String speciality) {
+        this.speciality_id = speciality_id;
+        this.speciality = speciality;
+    }
+
     public int getSpeciality_id() {
         return speciality_id;
     }
