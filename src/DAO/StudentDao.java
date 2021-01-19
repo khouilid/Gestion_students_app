@@ -11,10 +11,13 @@ public interface StudentDao {
 
         ResultSet getAll() throws SQLException;
 
+//ajouter les models student
         String set(Student Student) throws SQLException;
 
+//modifier les models student
         String update(Student Student) throws SQLException;
-
+        
+//supprimer les models student
         String delete(Student Student) throws SQLException;
     }
 

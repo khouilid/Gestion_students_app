@@ -1,12 +1,13 @@
 package Modules;
 
 public class Student {
+    //les attibuts
     private static int id;
     private static String name;
     private static String phone;
     private static String email;
     private static String speciality;
-
+//getters and setters
     public static int getId() {
         return id;
     }
@@ -48,9 +49,10 @@ public class Student {
     }
 
 
-
+//constractors
     public Student() {
     }
+
 
     public Student(int id, String name, String phone, String email, String speciality) {
         this.id = id;

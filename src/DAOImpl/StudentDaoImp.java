@@ -12,7 +12,8 @@ import java.util.Objects;
 
 public abstract class StudentDaoImp extends DBconnection implements StudentDao {
 
-
+//selection des etudiants par id  
+//utulisation PreperdStatement Pour les injections sql 
     @Override
     public ResultSet get_By_id(int id) throws SQLException {
         try {
@@ -29,11 +30,12 @@ public abstract class StudentDaoImp extends DBconnection implements StudentDao {
         }
         return null;
     }
+    //selection tout les etudiants qui se trouve dans la table students
     @Override
     public ResultSet getAll() throws SQLException {
         try {
             Statement stmt = Objects.requireNonNull(connect()).createStatement();
-            return stmt.executeQuery("SELECT * FROM students;");
+            return stmt.executeQuery("SELECT * FROM students");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }finally {
@@ -44,8 +46,7 @@ public abstract class StudentDaoImp extends DBconnection implements StudentDao {
         return null;
     }
 
-
-
+//Insertion les champs dans la table student 
     @Override
     public String set(Student Student) throws SQLException {
         try {
